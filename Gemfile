@@ -29,9 +29,15 @@ gem 'spring',        group: :development
 
 
 gem 'bcrypt', '~> 3.1.7'
+gem 'figaro'
 gem 'foundation-rails'
 gem 'haml'
 gem 'mandrill-api'
+gem 'simplecov', :require => false, :group => :test
+
+group :development, :test do
+  gem 'rspec-rails', '~> 3.0'
+end
 
 # Use unicorn as the app server
 # gem 'unicorn'
