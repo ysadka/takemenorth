@@ -33,6 +33,7 @@ gem 'figaro'
 gem 'foundation-rails'
 gem 'haml'
 gem 'mandrill-api'
+gem 'rails_12factor', group: :production
 gem 'simplecov', :require => false, :group => :test
 
 group :development, :test do

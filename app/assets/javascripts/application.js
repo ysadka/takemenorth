@@ -14,6 +14,10 @@
 //= require jquery_ujs
 //= require foundation
 //= require turbolinks
+//= require vendor/modernizr
+//= require vendor/jquery
+//= require vendor/fastclick
+
 //= require_tree .
 
 $(function(){ $(document).foundation(); });
