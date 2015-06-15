@@ -1,7 +1,7 @@
 Rails.application.routes.draw do
   # The priority is based upon order of creation: first created -> highest priority.
 
-  root 'statics#coming_soon'
+  root 'statics#homepage'
 
   get '/faq', to: 'statics#faq'
   get '/request-thanks', to: 'statics#request-thanks'
