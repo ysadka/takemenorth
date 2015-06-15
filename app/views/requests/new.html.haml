@@ -1,0 +1,33 @@
+=form_for @request, url: {action: "create"} do |f|
+  .row
+    .large-4.columns
+      %lable First Name
+      =f.text_field :first_name, required: true
+  .row
+    .large-4.columns
+      %lable Last Name
+      =f.text_field :last_name, required: true
+  .row
+    .large-4.columns
+      %lable Email
+      =f.text_field :email, required: true
+  .row
+    .large-4.columns
+      %lable Phone Number
+      =f.text_field :phone_number, required: true
+  
+  .row
+    .large-4.columns
+      %lable Do you have any wine club memberships?
+      =select(:request, :club_memberships, options_for_select([['No', false], ['Yes', true]]) )
+  .row
+    .large-4.columns
+      %lable Do live in the Bay Area?
+      =select(:request, :live_in_sf, options_for_select([['No', false], ['Yes', true]]) )
+  .row
+    .large-4.columns
+      %lable Would you like the vehicle Wi-Fi enabled?
+      =select(:request, :wifi, options_for_select([['No', false], ['Yes', true]]) )
+  .row
+    .large-4.columns
+      =f.submit "Submit Request"
