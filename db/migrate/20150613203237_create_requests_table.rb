@@ -3,7 +3,6 @@ class CreateRequestsTable < ActiveRecord::Migration
     create_table :requests do |t|
       t.string :first_name,        null: false
       t.string :last_name,         null: false
-      t.string :phone_number,      null: false
       t.string :email,             null: false
       t.boolean :club_memberships, null: false, default: false
       t.boolean :live_in_sf,       null: false, default: false
