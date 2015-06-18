@@ -22,6 +22,13 @@
 
   <body>
     <%= render 'layouts/nav' %>
+    <% if flash %>
+      <% flash.each do |name, msg| %>
+        <%= content_tag(:small, msg, :class => "#{name}") %>
+      <% end %>
+      <% flash.discard %>
+    <% end %>
+
     <%= yield %>
 
   </body>
