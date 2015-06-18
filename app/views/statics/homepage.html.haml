@@ -1,1 +1,14 @@
-%button=link_to "Take Me North!", new_request_url
+:scss
+  body{
+    background-image: url('assets/vineyard.jpg');
+    background-repeat: no-repeat;
+    background-size: cover;
+    -webkit-background-size: cover;
+    -moz-background-size: cover;
+    -o-background-size: cover;
+    width: 100% !important;
+    z-index: 0;
+    }
+.row{style: "padding-top: 20%;"}
+  .small-3.small-centered.columns{style: "width: 205px;"}
+    =link_to "Take Me North!", new_request_url, {class: "button", style: "background-color: #F07154;"}
