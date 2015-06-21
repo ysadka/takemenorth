@@ -3,10 +3,14 @@ Rails.application.routes.draw do
 
   root 'statics#homepage'
 
-  get '/faq', to: 'statics#faq'
+  get '/faq',            to: 'statics#faq'
   get '/request-thanks', to: 'statics#request-thanks'
 
+  get '/scuba/steve', to: 'users#admin'
+
   resources :requests
+
+
 
   # Example of named route that can be invoked with purchase_url(id: product.id)
   #   get 'products/:id/purchase' => 'catalog#purchase', as: :purchase

@@ -1,0 +1,15 @@
+%table
+  %thead
+    %tr
+      %th{width:"150"} First Name
+      %th{width:"150"} Last Name
+      %th{width:"200"} Email
+
+  %tbody
+  -@requests.each do |r|
+    %tr 
+      %td= r.first_name
+      %td= r.last_name
+      %td= r.email
+
+=@requests.count
