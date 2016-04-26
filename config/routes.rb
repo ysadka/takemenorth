@@ -6,7 +6,15 @@ Rails.application.routes.draw do
   get '/faq',            to: 'statics#faq'
   get '/request-thanks', to: 'statics#request-thanks'
 
+<<<<<<< Updated upstream
   get '/scuba/steve', to: 'users#admin'
+=======
+<<<<<<< HEAD
+  get 'scuba/steve', to: 'user#admin'
+=======
+  get '/scuba/steve', to: 'users#admin'
+>>>>>>> 5f2aa5c5adf3f3b0a12e0867a200937fcf872663
+>>>>>>> Stashed changes
 
   resources :requests
 
